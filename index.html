@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/src/images/logo-instagram.svg" type="image/x-icon">
+    <link rel="stylesheet" href="/src/style.css">
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Instagram</title>
+</head>
+<body>
+    <header class="container pb-0">
+            <nav class="row navbar navbar-light bg-light">
+                <!-- Instagram logo -->
+                <div class="col-4">
+                    <a class="navbar-brand" href="#">
+                        <img src="/src/images/logo-instagram.svg" width="30" height="30" alt="Instagram logo">
+                        <img src="/src/images/logo-instagram-nombre.svg" width="100" height="40" alt="Instagram logo">
+                    </a>
+                </div>
+
+                <!-- Modal y dropdown -->
+                <div class="col-8 d-flex justify-content-end">
+
+                    <!-- Modal button -->
+                    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Create a new post</button>
+                    
+                    <!-- Modal content -->
+                    <div class="modal fade " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="form-group">
+                                            <textarea class="form-control" id="message-text"></textarea>
+                                        </div>
+                                        
+                                        <button type="button" class="btn btn-light border">
+                                            <img src="/src/images/icons/camera.svg" width="20" height="20" alt="Add image">
+                                        </button>
+
+                                        <button type="button" class="btn btn-light border">
+                                            <img src="/src/images/icons/location.svg" width="20" height="20" alt="Add location">
+                                        </button>
+                                    </form>
+    
+    
+                                    <div class="row d-flex justify-content-end mt-5 mb-2 mx-2">
+                                        <button type="button" class="btn btn-secondary mx-3" data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-success">Publish</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Dropdown -->
+                    <div class="dropdown ml-2">
+                        <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="/src/images/gear.svg" width="20" height="20" alt="configuración">
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                <button class="dropdown-item" type="button">Action</button>
+                                <button class="dropdown-item" type="button">Another action</button>
+                                <button class="dropdown-item" type="button">Something else here</button>
+                                <button class="dropdown-item mt-4" type="button">Log out</button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+    </header>
+    <main class="container-fluid mt-3">
+        <!-- Tab pill  -->
+        <div class="row mt-5"> 
+            <div class="col">
+                <div class="d-flex justify-content-center align-content-center">
+                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                        <!-- Tab pills links -->
+                        <li class="nav-item ">
+                            <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-grid" role="tab" aria-controls="pills-home" aria-selected="true">
+                                <img src="/src/images/icons/grid.svg" width="20" height="20" alt="">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-list" role="tab" aria-controls="pills-profile" aria-selected="false">
+                                <img src="/src/images/icons/square.svg" width="15" height="15" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+
+                  <!-- Tab pills content -->
+                <div class="tab-content" id="pills-tabContent">
+
+                    
+                    <!-- Feed grid -->
+                    <div class="tab-pane fade show active" id="pills-grid" role="tabpanel" aria-labelledby="pills-profile-tab">
+                        
+                    </div>
+                        <div class="row">
+                            <div class="col-4 m-0 p-0">
+                                <div class="post__photo--background" id="doggy"></div>
+                            </div>
+                            <div class="col-4 m-0 p-0">
+                                <div class="post__photo--background" id="developer"></div>
+                            </div>
+                            <div class="col-4 m-0 p-0">
+                                <div class="post__photo--background" id="book"></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4 m-0 p-0">
+                                <div class="post__photo--background" id="doggo"></div>
+                            </div>
+                            <div class="col-4 m-0 p-0">
+                                <div class="post__photo--background" id="charge"></div>
+                            </div>
+                            <div class="col-4 m-0 p-0">
+                                <div class="post__photo--background" id="boss"></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4 m-0 p-0">
+                                <div class="post__photo--background" id="crazy"></div>
+                            </div>
+                            <div class="col-4 m-0 p-0">
+                                <div class="post__photo--background" id="video">
+                                    <video src="/src/images/videowhite.mp4" width="100%" height="400" muted autoplay loop></video>
+                                </div>
+                            </div>
+                            <div class="col-4 m-0 p-0">
+                                <div class="post__photo--background" id="unorojo"></div>
+                            </div>
+                        </div>
+                    
+                    <!-- Feed list colum -->
+                     <div class="tab-pane fade d-flex flex-column  align-items-center justify-content-center mt-5" id="pills-list" role="tabpanel" aria-labelledby="pills-home-tab">
+                         <div class="row d-flex flex-column jusitfy-content-center w-50 bg-light">
+                             <div class="col d-flex justify-content-between py-4 my-3 px-3">
+                                 <h2>My First Photo</h2>
+                                 <div class="header__menu--date">
+                                         12/17
+                                 </div>
+                             </div>
+                             <div class="col  m-0">
+                                 <div class="post__photo--background" id="doggy"></div>
+                             </div>
+                             <div class="col py-4 my-3 px-3">
+                                 <div class="">
+                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa facilis sequi, magni quam omnis exercitationem quaerat ex perspiciatis impedit eos autem nisi dolores quibusdam vero expedita facere. Aut, quis natus? </p>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="row d-flex flex-column jusitfy-content-center w-50 bg-light">
+                            <div class="col d-flex justify-content-between py-4 my-3 px-3">
+                                <h2>My First Photo</h2>
+                                <div class="header__menu--date">
+                                        12/17
+                                </div>
+                            </div>
+                            <div class="col  m-0">
+                                <div class="post__photo--background" id="developer"></div>
+                            </div>
+                            <div class="col py-4 my-3 px-3">
+                                <div class="">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa facilis sequi, magni quam omnis exercitationem quaerat ex perspiciatis impedit eos autem nisi dolores quibusdam vero expedita facere. Aut, quis natus? </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row d-flex flex-column jusitfy-content-center w-50 bg-light">
+                            <div class="col d-flex justify-content-between py-4 my-3 px-3">
+                                <h2>My First Photo</h2>
+                                <div class="header__menu--date">
+                                        12/17
+                                </div>
+                            </div>
+                            <div class="col  m-0">
+                                <div class="post__photo--background" id="book"></div>
+                            </div>
+                            <div class="col py-4 my-3 px-3">
+                                <div class="">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa facilis sequi, magni quam omnis exercitationem quaerat ex perspiciatis impedit eos autem nisi dolores quibusdam vero expedita facere. Aut, quis natus? </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row d-flex flex-column jusitfy-content-center w-50 bg-light">
+                            <div class="col d-flex justify-content-between py-4 my-3 px-3">
+                                <h2>My First Photo</h2>
+                                <div class="header__menu--date">
+                                        12/17
+                                </div>
+                            </div>
+                            <div class="col  m-0">
+                                <div class="post__photo--background" id="doggo"></div>
+                            </div>
+                            <div class="col py-4 my-3 px-3">
+                                <div class="">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa facilis sequi, magni quam omnis exercitationem quaerat ex perspiciatis impedit eos autem nisi dolores quibusdam vero expedita facere. Aut, quis natus? </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row d-flex flex-column jusitfy-content-center w-50 bg-light">
+                            <div class="col d-flex justify-content-between py-4 my-3 px-3">
+                                <h2>My First Photo</h2>
+                                <div class="header__menu--date">
+                                        12/17
+                                </div>
+                            </div>
+                            <div class="col  m-0">
+                                <div class="post__photo--background" id="charge"></div>
+                            </div>
+                            <div class="col py-4 my-3 px-3">
+                                <div class="">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa facilis sequi, magni quam omnis exercitationem quaerat ex perspiciatis impedit eos autem nisi dolores quibusdam vero expedita facere. Aut, quis natus? </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row d-flex flex-column jusitfy-content-center w-50 bg-light">
+                            <div class="col d-flex justify-content-between py-4 my-3 px-3">
+                                <h2>My First Photo</h2>
+                                <div class="header__menu--date">
+                                        12/17
+                                </div>
+                            </div>
+                            <div class="col  m-0">
+                                <div class="post__photo--background" id="boss"></div>
+                            </div>
+                            <div class="col py-4 my-3 px-3">
+                                <div class="">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa facilis sequi, magni quam omnis exercitationem quaerat ex perspiciatis impedit eos autem nisi dolores quibusdam vero expedita facere. Aut, quis natus? </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row d-flex flex-column jusitfy-content-center w-50 bg-light">
+                            <div class="col d-flex justify-content-between py-4 my-3 px-3">
+                                <h2>My First Photo</h2>
+                                <div class="header__menu--date">
+                                        12/17
+                                </div>
+                            </div>
+                            <div class="col  m-0">
+                                <div class="post__photo--background" id="crazy"></div>
+                            </div>
+                            <div class="col py-4 my-3 px-3">
+                                <div class="">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa facilis sequi, magni quam omnis exercitationem quaerat ex perspiciatis impedit eos autem nisi dolores quibusdam vero expedita facere. Aut, quis natus? </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row d-flex flex-column jusitfy-content-center w-50 bg-light">
+                            <div class="col d-flex justify-content-between py-4 my-3 px-3">
+                                <h2>My First Video</h2>
+                                <div class="header__menu--date">
+                                        12/17
+                                </div>
+                            </div>
+                            <div class="col  m-0">
+                                <div class="post__photo--background" id="video">
+                                    <video src="/src/images/videowhite.mp4" width="100%" height="400" muted autoplay loop></video>
+                                </div>
+                            </div>
+                            <div class="col py-4 my-3 px-3">
+                                <div class="">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa facilis sequi, magni quam omnis exercitationem quaerat ex perspiciatis impedit eos autem nisi dolores quibusdam vero expedita facere. Aut, quis natus? </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row d-flex flex-column jusitfy-content-center w-50 bg-light">
+                            <div class="col d-flex justify-content-between py-4 my-3 px-3">
+                                <h2>My First Photo</h2>
+                                <div class="header__menu--date">
+                                        12/17
+                                </div>
+                            </div>
+                            <div class="col  m-0">
+                                <div class="post__photo--background" id="unorojo"></div>
+                            </div>
+                            <div class="col py-4 my-3 px-3">
+                                <div class="">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa facilis sequi, magni quam omnis exercitationem quaerat ex perspiciatis impedit eos autem nisi dolores quibusdam vero expedita facere. Aut, quis natus? </p>
+                                </div>
+                            </div>
+                        </div>
+                     </div>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+    <footer class="container-fluid">
+
+    </footer>
+
+
+
+
+
+
+
+    <!-- JS Bootstrap Script -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
