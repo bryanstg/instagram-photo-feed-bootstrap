@@ -1,3 +1,46 @@
-.active a{
-    color: gray !important;
+main {
+    background-color: rgb(230, 230, 230);
 }
+.active a {
+    background-color: gray !important;
+}
+
+.post__photo--background {
+    height: 25rem;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#doggy {
+    background-image: url("/src/images/doggy.jpg");
+}
+#developer {
+    background-image: url("/src/images/developer.jpg");
+}
+#book {
+    background-image: url("/src/images/book.jpg");
+}
+#doggo {
+    background-image: url("/src/images/doggo.jpg");
+    background-position: bottom;
+}
+#charge {
+    background-image: url("/src/images/charge.jpg");
+}
+#boss {
+    background-image: url("/src/images/boss.jpg");
+}
+#crazy {
+    background-image: url("/src/images/crazy.jpg");
+}
+#video {
+    background-size: cover;
+}
+#unorojo {
+    background-image: url("/src/images/unorojo.jpg");
+}
+
+
+
