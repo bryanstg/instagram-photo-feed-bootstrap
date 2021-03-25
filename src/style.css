@@ -1,8 +1,6 @@
-main {
-    background-color: rgb(230, 230, 230);
-}
-.active a {
-    background-color: gray !important;
+
+.nav-pills .nav-link.active {
+    background-color: gray;
 }
 
 .post__photo--background {
@@ -14,33 +12,32 @@ main {
 }
 
 #doggy {
-    background-image: url("/src/images/doggy.jpg");
+    background-image: url("https://lh3.googleusercontent.com/u3BjpvqU5yAjiHHgNLFrELPxeVzOOvew-eVziOElJg0S6gYBBFV7sokqxBuLt0mbWg-MNSgamODgrw=w1366-h635-rw");
 }
 #developer {
-    background-image: url("/src/images/developer.jpg");
+    background-image: url("https://lh6.googleusercontent.com/OzMT1YCxxaWkYwuKUpCsTrWRD5tjYCFfVS16HdTtK4jMwsLaR0dHB8TU5LvqQE6i8QjBur9f651Brw=w1366-h635-rw");
 }
 #book {
-    background-image: url("/src/images/book.jpg");
+    background-image: url("https://lh6.googleusercontent.com/P3kYegORjycvlyxmCIrjUi6G-2Qxi7CBk2lTagJ-208Yzdx0iZyTj9nV6QbGSoj6USJ0cltR3rNjTQ=w1366-h635-rw");
 }
 #doggo {
-    background-image: url("/src/images/doggo.jpg");
+    background-image: url("https://lh5.googleusercontent.com/TVvNTR3j1fz5OkzQbd-fy5HNku3vMNmJvE_WO4nQMm4nwxBODVehzXEzOm6l3X9-TS-HcEhVg5ocEg=w1366-h635-rw");
     background-position: bottom;
 }
 #charge {
-    background-image: url("/src/images/charge.jpg");
+    background-image: url("https://lh3.googleusercontent.com/LDdNXqYWYsZqAD0azk8iDDrbk7OnXxjyCAbjcANt7rV0IZ49McpmT-yPGS8-ZKmro9nbhD4hd6Dfyg=w1366-h635-rw");
 }
 #boss {
-    background-image: url("/src/images/boss.jpg");
+    background-image: url("https://lh6.googleusercontent.com/DVf108YNEYQ6EQxG3S4CiTqXGHCvoLjd6XsVl1_bj6T13ueATQwuKM7g19izPgGcmKnQcnJfAED3xQ=w1366-h635-rw");
 }
 #crazy {
-    background-image: url("/src/images/crazy.jpg");
+    background-image: url("https://lh4.googleusercontent.com/ul2Q3Wq7Q4PFZ5NlhiBp7xoAqbCZWSq8LkRrO85c0sTKuAEXocVF_Xsn_EQczF5Vz3krEhmvI4q0JQ=w1366-h635-rw");
 }
 #video {
     background-size: cover;
 }
 #unorojo {
-    background-image: url("/src/images/unorojo.jpg");
+    background-image: url("https://lh3.googleusercontent.com/l_BLLje3S1mn4ZqdI6H06ZxXYATbgG5IeyijjvFq1cznEQYoSmG004ZOi7e7rlWck5bMKxBb7dJMfA=w1366-h635-rw");
 }
-
 
 
