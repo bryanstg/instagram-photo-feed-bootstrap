@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/src/images/logo-instagram.svg" type="image/x-icon">
-    <link rel="stylesheet" href="/src/style.css">
     <!-- Bootstrap  -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+    
+    <link rel="stylesheet" href="/src/style.css">
     <title>Instagram</title>
 </head>
-<body>
+<body >
     <header class="container pb-0">
             <nav class="row navbar navbar-light bg-light">
                 <!-- Instagram logo -->
@@ -80,12 +80,12 @@
                     <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                         <!-- Tab pills links -->
                         <li class="nav-item ">
-                            <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-grid" role="tab" aria-controls="pills-home" aria-selected="true">
+                            <a class="nav-link active" id="pills-grid-tab" data-toggle="pill" href="#pills-grid" role="tab" aria-controls="pills-grid" aria-selected="true">
                                 <img src="/src/images/icons/grid.svg" width="20" height="20" alt="">
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-list" role="tab" aria-controls="pills-profile" aria-selected="false">
+                            <a class="nav-link" id="pills-list-tab" data-toggle="pill" href="#pills-list" role="tab" aria-controls="pills-list" aria-selected="false">
                                 <img src="/src/images/icons/square.svg" width="15" height="15" alt="">
                             </a>
                         </li>
@@ -98,10 +98,9 @@
 
                     
                     <!-- Feed grid -->
-                    <div class="tab-pane fade show active" id="pills-grid" role="tabpanel" aria-labelledby="pills-profile-tab">
+                    <div class="tab-pane fade show active" id="pills-grid" role="tabpanel" aria-labelledby="pills-grid-tab">
                         
-                    </div>
-                        <div class="row">
+                        <div class="row h-25">
                             <div class="col-4 m-0 p-0">
                                 <div class="post__photo--background" id="doggy"></div>
                             </div>
@@ -112,7 +111,7 @@
                                 <div class="post__photo--background" id="book"></div>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row h-25">
                             <div class="col-4 m-0 p-0">
                                 <div class="post__photo--background" id="doggo"></div>
                             </div>
@@ -123,7 +122,7 @@
                                 <div class="post__photo--background" id="boss"></div>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row h-25">
                             <div class="col-4 m-0 p-0">
                                 <div class="post__photo--background" id="crazy"></div>
                             </div>
@@ -136,155 +135,230 @@
                                 <div class="post__photo--background" id="unorojo"></div>
                             </div>
                         </div>
+                    </div>
                     
                     <!-- Feed list colum -->
-                     <div class="tab-pane fade d-flex flex-column  align-items-center justify-content-center mt-5" id="pills-list" role="tabpanel" aria-labelledby="pills-home-tab">
-                         <div class="row d-flex flex-column jusitfy-content-center w-50 bg-light">
-                             <div class="col d-flex justify-content-between py-4 my-3 px-3">
-                                 <h2>My First Photo</h2>
-                                 <div class="header__menu--date">
-                                         12/17
+                     <div class="tab-pane fade" id="pills-list" role="tabpanel" aria-labelledby="pills-list-tab">
+                         <div class="container d-flex flex-column  align-items-center justify-content-center mt-5 min-vw-50">
+                             <div class="row d-flex flex-column jusitfy-content-center w-50 bg-light">
+                                 <div class="col d-flex justify-content-between py-4 my-3 px-3">
+                                     <h2>My First Photo</h2>
+                                     <div class="header__menu--date">
+                                             12/17
+                                     </div>
+                                 </div>
+                                 <div class="col  m-0">
+                                     <div class="post__photo--background" id="doggy"></div>
+                                 </div>
+                                 <div class="col py-4 my-3 px-3">
+                                    <div class="likes">
+                                         <p>
+                                             <strong>23 likes</strong>
+                                         </p>
+                                    </div>
+                                    <div class="description">
+                                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa facilis sequi, magni quam omnis exercitationem quaerat ex perspiciatis impedit eos autem nisi dolores quibusdam vero expedita facere. Aut, quis natus? </p>
+                                    </div>
+                                    <div class="comment">
+                                        <img class="mx-2"src="/src/images/icons/heart.svg" alt="Like" width="20" height="20"><span class="px-2"> Comment...</span>
+                                    </div>
                                  </div>
                              </div>
-                             <div class="col  m-0">
-                                 <div class="post__photo--background" id="doggy"></div>
-                             </div>
-                             <div class="col py-4 my-3 px-3">
-                                 <div class="">
-                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa facilis sequi, magni quam omnis exercitationem quaerat ex perspiciatis impedit eos autem nisi dolores quibusdam vero expedita facere. Aut, quis natus? </p>
-                                 </div>
-                             </div>
+                             <div class="row d-flex flex-column jusitfy-content-center w-50 bg-light">
+                                <div class="col d-flex justify-content-between py-4 my-3 px-3">
+                                    <h2>My First Photo</h2>
+                                    <div class="header__menu--date">
+                                            12/17
+                                    </div>
+                                </div>
+                                <div class="col  m-0">
+                                    <div class="post__photo--background" id="developer"></div>
+                                </div>
+                                <div class="col py-4 my-3 px-3">
+                                    <div class="likes">
+                                        <p>
+                                            <strong>23 likes</strong>
+                                        </p>
+                                   </div>
+                                   <div class="description">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa facilis sequi, magni quam omnis exercitationem quaerat ex perspiciatis impedit eos autem nisi dolores quibusdam vero expedita facere. Aut, quis natus? </p>
+                                   </div>
+                                   <div class="comment">
+                                       <img class="mx-2"src="/src/images/icons/heart.svg" alt="Like" width="20" height="20"><span class="px-2"> Comment...</span>
+                                   </div>
+                                </div>
+                            </div>
+                            <div class="row d-flex flex-column jusitfy-content-center w-50 bg-light">
+                                <div class="col d-flex justify-content-between py-4 my-3 px-3">
+                                    <h2>My First Photo</h2>
+                                    <div class="header__menu--date">
+                                            12/17
+                                    </div>
+                                </div>
+                                <div class="col  m-0">
+                                    <div class="post__photo--background" id="book"></div>
+                                </div>
+                                <div class="col py-4 my-3 px-3">
+                                    <div class="likes">
+                                        <p>
+                                            <strong>23 likes</strong>
+                                        </p>
+                                   </div>
+                                   <div class="description">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa facilis sequi, magni quam omnis exercitationem quaerat ex perspiciatis impedit eos autem nisi dolores quibusdam vero expedita facere. Aut, quis natus? </p>
+                                   </div>
+                                   <div class="comment">
+                                       <img class="mx-2"src="/src/images/icons/heart.svg" alt="Like" width="20" height="20"><span class="px-2"> Comment...</span>
+                                   </div>
+                                </div>
+                            </div>
+                            <div class="row d-flex flex-column jusitfy-content-center w-50 bg-light">
+                                <div class="col d-flex justify-content-between py-4 my-3 px-3">
+                                    <h2>My First Photo</h2>
+                                    <div class="header__menu--date">
+                                            12/17
+                                    </div>
+                                </div>
+                                <div class="col  m-0">
+                                    <div class="post__photo--background" id="doggo"></div>
+                                </div>
+                                <div class="col py-4 my-3 px-3">
+                                    <div class="likes">
+                                        <p>
+                                            <strong>23 likes</strong>
+                                        </p>
+                                   </div>
+                                   <div class="description">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa facilis sequi, magni quam omnis exercitationem quaerat ex perspiciatis impedit eos autem nisi dolores quibusdam vero expedita facere. Aut, quis natus? </p>
+                                   </div>
+                                   <div class="comment">
+                                       <img class="mx-2"src="/src/images/icons/heart.svg" alt="Like" width="20" height="20"><span class="px-2"> Comment...</span>
+                                   </div>
+                                </div>
+                            </div>
+                            <div class="row d-flex flex-column jusitfy-content-center w-50 bg-light">
+                                <div class="col d-flex justify-content-between py-4 my-3 px-3">
+                                    <h2>My First Photo</h2>
+                                    <div class="header__menu--date">
+                                            12/17
+                                    </div>
+                                </div>
+                                <div class="col  m-0">
+                                    <div class="post__photo--background" id="charge"></div>
+                                </div>
+                                <div class="col py-4 my-3 px-3">
+                                    <div class="likes">
+                                        <p>
+                                            <strong>23 likes</strong>
+                                        </p>
+                                   </div>
+                                   <div class="description">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa facilis sequi, magni quam omnis exercitationem quaerat ex perspiciatis impedit eos autem nisi dolores quibusdam vero expedita facere. Aut, quis natus? </p>
+                                   </div>
+                                   <div class="comment">
+                                       <img class="mx-2"src="/src/images/icons/heart.svg" alt="Like" width="20" height="20"><span class="px-2"> Comment...</span>
+                                   </div>
+                                </div>
+                            </div>
+                            <div class="row d-flex flex-column jusitfy-content-center w-50 bg-light">
+                                <div class="col d-flex justify-content-between py-4 my-3 px-3">
+                                    <h2>My First Photo</h2>
+                                    <div class="header__menu--date">
+                                            12/17
+                                    </div>
+                                </div>
+                                <div class="col  m-0">
+                                    <div class="post__photo--background" id="boss"></div>
+                                </div>
+                                <div class="col py-4 my-3 px-3">
+                                    <div class="likes">
+                                        <p>
+                                            <strong>23 likes</strong>
+                                        </p>
+                                   </div>
+                                   <div class="description">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa facilis sequi, magni quam omnis exercitationem quaerat ex perspiciatis impedit eos autem nisi dolores quibusdam vero expedita facere. Aut, quis natus? </p>
+                                   </div>
+                                   <div class="comment">
+                                       <img class="mx-2"src="/src/images/icons/heart.svg" alt="Like" width="20" height="20"><span class="px-2"> Comment...</span>
+                                   </div>
+                                </div>
+                            </div>
+                            <div class="row d-flex flex-column jusitfy-content-center w-50 bg-light">
+                                <div class="col d-flex justify-content-between py-4 my-3 px-3">
+                                    <h2>My First Photo</h2>
+                                    <div class="header__menu--date">
+                                            12/17
+                                    </div>
+                                </div>
+                                <div class="col  m-0">
+                                    <div class="post__photo--background" id="crazy"></div>
+                                </div>
+                                <div class="col py-4 my-3 px-3">
+                                    <div class="likes">
+                                        <p>
+                                            <strong>23 likes</strong>
+                                        </p>
+                                   </div>
+                                   <div class="description">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa facilis sequi, magni quam omnis exercitationem quaerat ex perspiciatis impedit eos autem nisi dolores quibusdam vero expedita facere. Aut, quis natus? </p>
+                                   </div>
+                                   <div class="comment">
+                                       <img class="mx-2"src="/src/images/icons/heart.svg" alt="Like" width="20" height="20"><span class="px-2"> Comment...</span>
+                                   </div>
+                                </div>
+                            </div>
+                            <div class="row d-flex flex-column jusitfy-content-center w-50 bg-light">
+                                <div class="col d-flex justify-content-between py-4 my-3 px-3">
+                                    <h2>My First Video</h2>
+                                    <div class="header__menu--date">
+                                            12/17
+                                    </div>
+                                </div>
+                                <div class="col  m-0">
+                                    <div class="post__photo--background" id="video">
+                                        <video src="/src/images/videowhite.mp4" width="100%" height="400" muted autoplay loop></video>
+                                    </div>
+                                </div>
+                                <div class="col py-4 my-3 px-3">
+                                    <div class="likes">
+                                        <p>
+                                            <strong>23 likes</strong>
+                                        </p>
+                                   </div>
+                                   <div class="description">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa facilis sequi, magni quam omnis exercitationem quaerat ex perspiciatis impedit eos autem nisi dolores quibusdam vero expedita facere. Aut, quis natus? </p>
+                                   </div>
+                                   <div class="comment">
+                                       <img class="mx-2"src="/src/images/icons/heart.svg" alt="Like" width="20" height="20"><span class="px-2"> Comment...</span>
+                                   </div>
+                                </div>
+                            </div>
+                            <div class="row d-flex flex-column jusitfy-content-center w-50 bg-light">
+                                <div class="col d-flex justify-content-between py-4 my-3 px-3">
+                                    <h2>My First Photo</h2>
+                                    <div class="header__menu--date">
+                                            12/17
+                                    </div>
+                                </div>
+                                <div class="col  m-0">
+                                    <div class="post__photo--background" id="unorojo"></div>
+                                </div>
+                                <div class="col py-4 my-3 px-3">
+                                    <div class="likes">
+                                        <p>
+                                            <strong>23 likes</strong>
+                                        </p>
+                                   </div>
+                                   <div class="description">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa facilis sequi, magni quam omnis exercitationem quaerat ex perspiciatis impedit eos autem nisi dolores quibusdam vero expedita facere. Aut, quis natus? </p>
+                                   </div>
+                                   <div class="comment">
+                                       <img class="mx-2"src="/src/images/icons/heart.svg" alt="Like" width="20" height="20"><span class="px-2"> Comment...</span>
+                                   </div>
+                                </div>
+                            </div>
                          </div>
-                         <div class="row d-flex flex-column jusitfy-content-center w-50 bg-light">
-                            <div class="col d-flex justify-content-between py-4 my-3 px-3">
-                                <h2>My First Photo</h2>
-                                <div class="header__menu--date">
-                                        12/17
-                                </div>
-                            </div>
-                            <div class="col  m-0">
-                                <div class="post__photo--background" id="developer"></div>
-                            </div>
-                            <div class="col py-4 my-3 px-3">
-                                <div class="">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa facilis sequi, magni quam omnis exercitationem quaerat ex perspiciatis impedit eos autem nisi dolores quibusdam vero expedita facere. Aut, quis natus? </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row d-flex flex-column jusitfy-content-center w-50 bg-light">
-                            <div class="col d-flex justify-content-between py-4 my-3 px-3">
-                                <h2>My First Photo</h2>
-                                <div class="header__menu--date">
-                                        12/17
-                                </div>
-                            </div>
-                            <div class="col  m-0">
-                                <div class="post__photo--background" id="book"></div>
-                            </div>
-                            <div class="col py-4 my-3 px-3">
-                                <div class="">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa facilis sequi, magni quam omnis exercitationem quaerat ex perspiciatis impedit eos autem nisi dolores quibusdam vero expedita facere. Aut, quis natus? </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row d-flex flex-column jusitfy-content-center w-50 bg-light">
-                            <div class="col d-flex justify-content-between py-4 my-3 px-3">
-                                <h2>My First Photo</h2>
-                                <div class="header__menu--date">
-                                        12/17
-                                </div>
-                            </div>
-                            <div class="col  m-0">
-                                <div class="post__photo--background" id="doggo"></div>
-                            </div>
-                            <div class="col py-4 my-3 px-3">
-                                <div class="">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa facilis sequi, magni quam omnis exercitationem quaerat ex perspiciatis impedit eos autem nisi dolores quibusdam vero expedita facere. Aut, quis natus? </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row d-flex flex-column jusitfy-content-center w-50 bg-light">
-                            <div class="col d-flex justify-content-between py-4 my-3 px-3">
-                                <h2>My First Photo</h2>
-                                <div class="header__menu--date">
-                                        12/17
-                                </div>
-                            </div>
-                            <div class="col  m-0">
-                                <div class="post__photo--background" id="charge"></div>
-                            </div>
-                            <div class="col py-4 my-3 px-3">
-                                <div class="">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa facilis sequi, magni quam omnis exercitationem quaerat ex perspiciatis impedit eos autem nisi dolores quibusdam vero expedita facere. Aut, quis natus? </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row d-flex flex-column jusitfy-content-center w-50 bg-light">
-                            <div class="col d-flex justify-content-between py-4 my-3 px-3">
-                                <h2>My First Photo</h2>
-                                <div class="header__menu--date">
-                                        12/17
-                                </div>
-                            </div>
-                            <div class="col  m-0">
-                                <div class="post__photo--background" id="boss"></div>
-                            </div>
-                            <div class="col py-4 my-3 px-3">
-                                <div class="">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa facilis sequi, magni quam omnis exercitationem quaerat ex perspiciatis impedit eos autem nisi dolores quibusdam vero expedita facere. Aut, quis natus? </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row d-flex flex-column jusitfy-content-center w-50 bg-light">
-                            <div class="col d-flex justify-content-between py-4 my-3 px-3">
-                                <h2>My First Photo</h2>
-                                <div class="header__menu--date">
-                                        12/17
-                                </div>
-                            </div>
-                            <div class="col  m-0">
-                                <div class="post__photo--background" id="crazy"></div>
-                            </div>
-                            <div class="col py-4 my-3 px-3">
-                                <div class="">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa facilis sequi, magni quam omnis exercitationem quaerat ex perspiciatis impedit eos autem nisi dolores quibusdam vero expedita facere. Aut, quis natus? </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row d-flex flex-column jusitfy-content-center w-50 bg-light">
-                            <div class="col d-flex justify-content-between py-4 my-3 px-3">
-                                <h2>My First Video</h2>
-                                <div class="header__menu--date">
-                                        12/17
-                                </div>
-                            </div>
-                            <div class="col  m-0">
-                                <div class="post__photo--background" id="video">
-                                    <video src="/src/images/videowhite.mp4" width="100%" height="400" muted autoplay loop></video>
-                                </div>
-                            </div>
-                            <div class="col py-4 my-3 px-3">
-                                <div class="">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa facilis sequi, magni quam omnis exercitationem quaerat ex perspiciatis impedit eos autem nisi dolores quibusdam vero expedita facere. Aut, quis natus? </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row d-flex flex-column jusitfy-content-center w-50 bg-light">
-                            <div class="col d-flex justify-content-between py-4 my-3 px-3">
-                                <h2>My First Photo</h2>
-                                <div class="header__menu--date">
-                                        12/17
-                                </div>
-                            </div>
-                            <div class="col  m-0">
-                                <div class="post__photo--background" id="unorojo"></div>
-                            </div>
-                            <div class="col py-4 my-3 px-3">
-                                <div class="">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa facilis sequi, magni quam omnis exercitationem quaerat ex perspiciatis impedit eos autem nisi dolores quibusdam vero expedita facere. Aut, quis natus? </p>
-                                </div>
-                            </div>
-                        </div>
                      </div>
                 </div>
             </div>
